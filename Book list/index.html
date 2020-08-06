@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.min.css">
+    <title>Book list</title>
+</head>
+<body>
+    <style>
+       
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:30px;
+            text-align: center;
+        }
+        p span{
+            color: rgb(0, 98, 211);
+        }
+        .book-form label{
+           font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <div class="container">
+    <p><span>Book</span>List</p>
+    <div class="forms">
+    <form id="book-form">
+       <div class="form-group">
+        <label>Title</label>
+      <input type="text" id="title" class="form-control">
+      </div>
+      <div class="form-group">
+        <label>Author</label>
+      <input type="text" id="author" class="form-control">
+      </div>
+      <div class="form-group">
+      <label>Price</label>
+      <input type="text" id="price" class="form-control">
+      </div>
+     <input type="submit" value="Add Book" class="btn btn-primary btn-block">
+    </form>
+    </div>
+    <table class="table table-striped mt-5">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody id="book-list">
+
+        </tbody>
+     
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
